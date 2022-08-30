@@ -1,0 +1,149 @@
+{
+  "menu": [
+    {
+      "navheader": "Menu Navigasi",
+      "slug": ""
+    },
+    {
+      "name": "Dashboards",
+      "badge": "",
+      "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+      "icon": "home",
+      "slug": "layout-empty",
+	  "url": "page-layouts/empty"
+    },
+    {
+      "name": "Master Data",
+      "icon": "database",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "master/departemen",
+          "name": "Departemen",
+          "icon": "circle",
+          "slug": "master-departemen"
+        },
+        {
+          "url": "master/jabatan",
+          "name": "Jabatan",
+          "icon": "circle",
+          "slug": "master-jabatan"
+        },
+        {
+          "url": "master/shift",
+          "name": "Shift",
+          "icon": "circle",
+          "slug": "master-shift"
+        }
+      ]
+    },
+    {
+      "url": "karyawan/list",
+      "name": "Data Karyawan",
+      "icon": "users",
+      "slug": "karyawan-list"
+    },
+    {
+      "name": "Detail Karyawan",
+      "icon": "user-check",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "karyawan/kontrak",
+          "name": "Kontrak",
+          "icon": "circle",
+          "slug": "karyawan-kontrak"
+        },
+        {
+          "url": "karyawan/gaji",
+          "name": "Gaji",
+          "icon": "circle",
+          "slug": "karyawan-gaji"
+        },
+        {
+          "url": "karyawan/jatahcuti",
+          "name": "Jatah Cuti",
+          "icon": "circle",
+          "slug": "karyawan-jatahcuti"
+        }
+      ]
+    },
+    {
+      "url": "app/email",
+      "name": "Pengajuan Cuti",
+      "icon": "file-text",
+      "slug": "app-email"
+    },
+    {
+      "url": "app/email",
+      "name": "Kehadiran",
+      "icon": "award",
+      "slug": "app-email"
+    },
+    {
+      "navheader": "Apps & Pages",
+      "slug": ""
+    },
+    {
+      "url": "app/email",
+      "name": "Email",
+      "icon": "mail",
+      "slug": "app-email"
+    },
+    {
+      "url": "app/chat",
+      "name": "Chat",
+      "icon": "message-square",
+      "slug": "app-chat"
+    },
+    {
+      "url": "app/todo",
+      "name": "Todo",
+      "icon": "check-square",
+      "slug": "app-todo"
+    },
+    {
+      "url": "app/calendar",
+      "name": "Calendar",
+      "icon": "calendar",
+      "slug": "app-calendar"
+    },
+    {
+      "url": "app/kanban",
+      "name": "Kanban",
+      "icon": "grid",
+      "slug": "app-kanban"
+    },
+    {
+      "name": "Invoice",
+      "icon": "file-text",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "app/invoice/list",
+          "name": "List",
+          "icon": "circle",
+          "slug": "app-invoice-list"
+        },
+        {
+          "url": "app/invoice/preview",
+          "name": "Preview",
+          "icon": "circle",
+          "slug": "app-invoice-preview"
+        },
+        {
+          "url": "app/invoice/edit",
+          "name": "Edit",
+          "icon": "circle",
+          "slug": "app-invoice-edit"
+        },
+        {
+          "url": "app/invoice/add",
+          "name": "Add",
+          "icon": "circle",
+          "slug": "app-invoice-add"
+        }
+      ]
+    }
+  ]
+}

@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 
 class MasterController extends Controller
 {
-    public function master_departemen_json(Request $request)
+    public function master_kph_json(Request $request)
     {
         if ($request->isMethod('post')) {
             if($request->input('delData')==1){
-                $data = DB::table('departemen')->where('depId', $request->input('dataId'))->delete();
+                $data = DB::table('kph')->where('kph_id', $request->input('dataId'))->delete();
                 if($data){
                     $dataJson['sukses'] = $data;
                     $dataJson['pesan'] = 'Data berhasil di hapus';
@@ -21,9 +21,9 @@ class MasterController extends Controller
                 }
                 print_r(json_encode($dataJson));
             }else{
-                if($request->input('depNama')!=""){
-                    $data = DB::table('departemen')->insert([
-                        'depNama'=>$request->input('depNama')
+                if($request->input('kph_name')!=""){
+                    $data = DB::table('kph')->insert([
+                        'kph_name'=>$request->input('kph_name')
                     ]);
                     if($data){
                         $dataJson['sukses'] = $data;
@@ -39,16 +39,16 @@ class MasterController extends Controller
                 print_r(json_encode($dataJson));
             }
         }else{
-            $data = DB::table('departemen')->get();
+            $data = DB::table('kph')->get();
             $dataJson['data'] = $data;
             print_r(json_encode($dataJson));
         }
     }
 
-    public function master_departemen()
+    public function master_kph()
     {
         $breadcrumbs = [['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Master"], ['name' => "Departemen"]];
-        return view('/content/master/departemen', ['breadcrumbs' => $breadcrumbs]);
+        return view('/content/master/kph', ['breadcrumbs' => $breadcrumbs]);
     }
 
     public function master_jabatan()

@@ -1,16 +1,1 @@
-$(function () {
-  ('use strict');
-  var editPermissionForm = $('#editPermissionForm');
-
-  // jQuery Validation
-  // --------------------------------------------------------------------
-  if (editPermissionForm.length) {
-    editPermissionForm.validate({
-      rules: {
-        editPermissionName: {
-          required: true
-        }
-      }
-    });
-  }
-});
+$((function(){var e=$("#editPermissionForm");e.length&&e.validate({rules:{editPermissionName:{required:!0}}})}));
